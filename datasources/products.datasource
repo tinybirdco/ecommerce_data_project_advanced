@@ -1,0 +1,10 @@
+
+SCHEMA >
+    id String,
+    color String,
+    section String,
+    description String
+
+# this creates a join table ready to accessby id
+# using joinGet('products_join_by_id', 'color', id)
+KEY id

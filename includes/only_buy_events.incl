@@ -1,0 +1,9 @@
+NODE only_buy_events
+SQL >
+    SELECT
+        toDate(timestamp) date,
+        product,
+        joinGet('products_join_by_id', 'color', product) as color,
+        JSONExtractFloat(json, 'price') as price
+    FROM events
+    where action = 'buy'

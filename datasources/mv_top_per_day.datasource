@@ -1,0 +1,8 @@
+
+SCHEMA >
+    date DateTime,
+    top_10 Array(String),
+    total_sales Float32
+
+ENGINE MergeTree
+SORTING_KEY date

@@ -1,0 +1,11 @@
+INCLUDE "./includes/only_buy_events.incl"
+
+NODE endpoint
+DESCRIPTION >
+    return sales for a product with color filter
+SQL >
+    %
+    select date, sum(price) total_sales
+    from only_buy_events
+    where color in {{Array(colors, 'black')}}
+    group by date
