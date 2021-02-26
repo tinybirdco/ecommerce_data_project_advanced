@@ -1,1 +1,1 @@
-INCLUDE "./includes/top_products.incl" "DATE_FILTER=between_dates"
+INCLUDE "../includes/top_products.incl" "DATE_FILTER=between_dates"
