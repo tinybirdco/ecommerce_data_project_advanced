@@ -1,4 +1,4 @@
-INCLUDE "./includes/only_buy_events.incl"
+INCLUDE "../includes/only_buy_events.incl"
 
 NODE top_per_day
 SQL >
